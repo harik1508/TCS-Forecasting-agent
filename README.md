@@ -1,4 +1,4 @@
-# TCS Financial Forecasting Agent
+﻿# TCS Financial Forecasting Agent
 
 An AI-powered financial research and forecasting service that automatically discovers TCS quarterly financial reports and earnings-call transcripts, extracts financial metrics, analyzes management commentary, and generates an evidence-grounded qualitative outlook for the upcoming quarter.
 
@@ -144,34 +144,34 @@ The master prompt and orchestration logic are available in `app/agent.py`. The s
 
 ```text
 tcs-financial-forecasting-agent/
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── agent.py
-│   ├── discovery.py
-│   ├── financial_parser.py
-│   ├── schemas.py
-│   └── tools.py
-├── ingestion/
-│   └── chunking.py
-├── retrieval/
-│   └── hybrid_search.py
-├── tests/
-│   └── test_discovery.py
-├── examples/
-│   ├── request.json
-│   └── forecast_response.json
-├── reports/
-│   ├── financial_validation.txt
-│   └── test_results.xml
-├── test_financial_tool.py
-├── validate_documents.py
-├── compose.yaml
-├── requirements.txt
-├── .env.example
-├── .gitignore
-├── AI_USAGE.md
-└── README.md
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ main.py
+â”‚   â”œâ”€â”€ agent.py
+â”‚   â”œâ”€â”€ discovery.py
+â”‚   â”œâ”€â”€ financial_parser.py
+â”‚   â”œâ”€â”€ schemas.py
+â”‚   â””â”€â”€ tools.py
+â”œâ”€â”€ ingestion/
+â”‚   â””â”€â”€ chunking.py
+â”œâ”€â”€ retrieval/
+â”‚   â””â”€â”€ hybrid_search.py
+â”œâ”€â”€ tests/
+â”‚   â””â”€â”€ test_discovery.py
+â”œâ”€â”€ examples/
+â”‚   â”œâ”€â”€ request.json
+â”‚   â””â”€â”€ forecast_response.json
+â”œâ”€â”€ reports/
+â”‚   â”œâ”€â”€ financial_validation.txt
+â”‚   â””â”€â”€ test_results.xml
+â”œâ”€â”€ test_financial_tool.py
+â”œâ”€â”€ validate_documents.py
+â”œâ”€â”€ compose.yaml
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ .env.example
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ AI_USAGE.md
+â””â”€â”€ README.md
 ```
 
 ## Installation and Setup
@@ -189,8 +189,8 @@ The application was locally tested using Python 3.10.11 and MySQL 8.0.46 on Wind
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/harik1508/tcs-financial-forecasting-agent.git
-cd tcs-financial-forecasting-agent
+git clone https://github.com/harik1508/TCS-Forecasting-agent.git
+cd TCS-Forecasting-agent
 ```
 
 ### Step 2: Create a virtual environment
@@ -364,9 +364,9 @@ The evaluation dataset contains three quarterly TCS fact sheets and three earnin
 | Revenue (INR crore) | 70,698 | 72,275 | 73,188 |
 | Net profit (INR crore) | 13,718 | 13,849 | 13,884 |
 | Operating margin (%) | 25.3 | 24.0 | 24.0 |
-| Revenue QoQ (%) | — | 2.23 | 1.26 |
-| Net profit QoQ (%) | — | 0.95 | 0.25 |
-| Margin change (percentage points) | — | -1.30 | 0.00 |
+| Revenue QoQ (%) | â€” | 2.23 | 1.26 |
+| Net profit QoQ (%) | â€” | 0.95 | 0.25 |
+| Margin change (percentage points) | â€” | -1.30 | 0.00 |
 
 The June 2026 net profit was recovered from the September 2026 comparative table. The June profit figure excludes exceptional items. The figures follow the fact-sheet presentation basis and should not automatically be interpreted as unadjusted statutory figures.
 
